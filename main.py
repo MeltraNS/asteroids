@@ -1,14 +1,14 @@
-import sys
-import pygame
-from constants import *
-from player import Player
-from asteroid import Asteroid
-from asteroidfield import AsteroidField
-from shot import Shot
+import sys  # import sys to activate sys.ext upon game over
+import pygame  # import pygame to run the game, draw polygons, etc.
+from constants import *  # import everything from the constants.py to establish non changing values
+from player import Player  # import the Player class from player.py to establish player attributes
+from asteroid import Asteroid  # import the Asteroid class from asteroid.py to make asteroids
+from asteroidfield import AsteroidField  # import the AsteroidField class from asteroidfield.py to define where and when asteroids spawn
+from shot import Shot # import the Shot class from shot.py to handle what happens when we shoot
 
-def main():
-    pygame.init()
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+def main():  # a main function is defined to run as soon as the program is run in Python
+    pygame.init()  # initiate a pygame instance
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))  # initialize variable screen to a 1280/720
     clock = pygame.time.Clock()
     
     updatable = pygame.sprite.Group()
