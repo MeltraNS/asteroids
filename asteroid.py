@@ -18,4 +18,9 @@ class Asteroid(CircleShape):  # initiate the class Asteroid inheriting everythin
             return
         else:
             random_angle = random.uniform(20,50)
+            posnew = pygame.math.Vector2.rotate(self.velocity, angle) * 1.2
+            negnew = pygame.math.Vector2.rotate(self.velocity, -angle) * 1.2
+            posnew_radius = 
+            newngew_radius = 
+            
             
